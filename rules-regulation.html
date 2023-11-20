@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EUROPEAN UNIVERSITY OF BANGLADESH">
+<meta name="keywords" content="">
+<meta name="author" content="Hridoy Jomadder">
+
+<head>
+    <title>Rules and Regulation || EUROPEAN UNIVERSITY OF BANGLADESH</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon-logo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+        .box {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+            box-sizing: border-box;
+        }
+
+        .box_row {
+            box-sizing: border-box;
+            border: 2px;
+            border-radius: 2px;
+            background-color: #ffffff;
+            width: 100%;
+            padding: 25px;
+        }
+
+        .box_text {
+            font-family: times new roman;
+            float: left;
+            margin: 20px;
+            text-align: left;
+
+        }
+
+        .box_img {
+            float: right;
+            height: 300px;
+            width: 300px;
+        }
+
+        .text {
+            font-family: times new roman;
+            margin: 20px;
+            width: 100%;
+        }
+
+
+        /*Footer Css*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #344684;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+
+        /*Table*/
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <div style="padding: 10px; background-color: #fff;">
+        <a href="#">
+            <img src="img/logo-eub.png" style="width: 18%; height: auto;display: block;
+  margin-left: auto;
+  margin-right: auto;">
+        </a>
+    </div>
+
+    <!-- ======= Dropdwn ======= -->
+    <div class="dropdwn" id="myHeader">
+        <nav>
+<!--<img src="img/logo-eub.png" style="height: auto;width: 250px;">-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about_us.html">About Us<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="" style="padding-right: 15px;">Humble Beginning</a></li>
+                        <li><a href="">Messages</a></li>
+                        <li><a href="">Certification</a></li>
+                        <li><a href="">Board of Trustees</a></li>
+                        <li><a href="">Mission and Vision</a></li>
+                        <li><a href="">Special Features</a></li>
+                        <li><a href="">Graduate Profile</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Academics</a>
+                    <ul>
+                        <li><a href="academic-policy.html">Academic Policy</a></li>
+                        <li><a href="rules-regulation.html">Rules & Regulation</a></li>
+                        <li><a href="degrees-offered.html">Degrees Offered</a></li>
+                        <li><a href="credit-transfer.html">Credit Transfer</a></li>
+                        <li><a href="examination">Examination</a></li>
+                        <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Admission</a>
+                    <ul>
+                        <li><a href="admission-information.html">Admission Information</a></li>
+                        <li><a href="waivers-and-assistance.html">Waivers and Assistance</a></li>
+                        <li><a href="courses-tuition-fees.html">Courses & Tuition Fees</a></li>
+                        <li><a href="students-welfare-committee-swc.html">Students Welfare Committee</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="admission-office.html">Admission Office</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Faculties</a>
+                    <ul>
+                        <li><a href="">Faculty of Sciences & Engineering</a>
+                            <ul>
+                                <li><a href="bachelor-of-computer-science.html">Department of Computer Science & Engineering</a>
+                            </ul>
+                        </li>
+                        <li><a href="">Faculty of Business Administration</a></li>
+                        <li><a href="">Faculty of Arts & Social Sciences</a></li>
+                        <li><a href="">Faculty Members</a>
+                            <ul>
+                                <li><a href="department-of-cse.html">Department of Computer Science & Engineering</a>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="">Administration</a>
+                    <ul>
+                        <li><a href="">Chairman</a></li>
+                        <li><a href="">Vice Chancellor</a></li>
+                        <li><a href="">Vice Chancellor Officer</a></li>
+                        <li><a href="">Office of the Treasurer</a></li>
+                        <li><a href="">Administration and office of the Registrar</a></li>
+                        <li><a href="">Office of The Proctor</a></li>
+                        <li><a href="">Office of The Controller of Examination</a></li>
+                        <li><a href="">Program Co-ordination</a></li>
+                        <li><a href="">Office of The Admission & Student Affairs</a></li>
+                        <li><a href="">Office of The Public Relations add Publications</a></li>
+                        <li><a href="">ICT and Laboratory Division</a></li>
+                        <li><a href="">Procurement and Inventory Control Section</a></li>
+                        <li><a href="">Libary and Module Archive</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Student Corner</a>
+                    <ul>
+                        <li><a href="class_routine.html">Class Routine</a></li>
+                        <li><a href="">Exam Schedule</a>
+                            <ul>
+                                <li><a href="cse_exam_schedule.html">CSE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Course Offer</a></li>
+                        <li><a href="">Admission Notice</a></li>
+                        <li><a href="">Laboratories</a></li>
+                        <li><a href="">Clubs and Co-Curriculars</a></li>
+                        <li><a href="">Result</a></li>
+                        <li><a href="">Students Guideline</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact_us.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item"><a href="">Research & Journals</a>
+                    <ul>
+                        <li><a href="">Research & Publication</a></li>
+                        <li><a href="">Journals</a></li>
+                        <li><a href="">Projects</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- ======= Rules and Regulation ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>Rules and Regulation</b><br><br>
+                Semester Schedule:<br><br>
+
+                There will be three semesters in a year. The duration and schedule of each semester will be as follow:<br><br>
+
+                <h2>Semester</h2>
+                <table>
+                    <tr>
+                        <td>Spring</td>
+                        <td>Advising and Registration<br>
+                            Class starts<br>
+                            Final Examination<br>
+                            Semester Break
+                        </td>
+                        <td>January 1 – 4<br>
+                            January 5<br>
+                            April 15 – 22<br>
+                            April 23 – 30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Summer</td>
+                        <td>Advising and Registration<br>
+                            Class starts<br>
+                            Final Examination<br>
+                            Semester Break
+                        </td>
+                        <td>May 01 – 05<br>
+                            May 06<br>
+                            Augest 15 – 22<br>
+                            Augest 23 – 30<br>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Fall</td>
+                        <td>Advising and Registration<br>
+                            Class starts<br>
+                            Final Examination<br>
+                            Semester Break
+                        </td>
+                        <td>September 01 – 05<br>
+                            September 05<br>
+                            December 15 – 22<br>
+                            December 23 – 31<br>
+                        </td>
+                    </tr>
+                </table>
+
+                <br><br>
+
+                <b>Registration:</b><br>
+                In every semester, date for registration will be notified. The students must be registered within the specified date. All fees are to be paid at the time of registration and are non-refundable except (i) where the University fails to provide a place to the students in a course and (ii) courses dropped by the student in the first week of registration. The student will in such cases get a refund of the tuition fee and other charges except registration/ admission fee.
+                <br><br>
+                <b>Transfer from other University:</b><br>
+
+                Students with good academic records from other recognized University are eligible for transfer of their credits to EUB. Students wiling to transfer from another university must have transcripts of courses and grades, together with the copies of certificate/ mark sheet of SSC or HSC or transcripts of O and A levels. These Transcripts will be evaluated against the minimum entry requirement at EUB.
+                <br><br>
+                <b>Exemption of Courses:</b><br>
+                Students with extensive academic or professional experience may apply to waive courses by completing a ‘Request for Course Waiver’ form. This form should be submitted to the Coordinator of the Program/ Head of the Dept./ Dean of the Faculty with the relevant academic transcripts or evidence of an appropriate certification. Students having completed any course of Bachelor’s degree from other recognized university are eligible for waiver provided that he/ she obtained at least a ‘B’ grade or over 50 percent marks in that specific course. Waiver is given to foundation courses only. Course waiver requires approval from equivalence committee of EUB.
+                <br><br>
+                <b>Admission of International Students:</b><br>
+
+                International students meeting equivalent admission qualification are eligible for admission as regular students or as special students for a part of the duration and may acquire transfer credits. In case of the latter, the recommended minimum duration of residence in the first and the second years is one semester. The University may enroll foreign students under an exchange program established between two universities.
+                <br><br>
+                <b>Drop/ Add Procedure:</b><br>
+
+                A student may drop or add new courses during the first week of the semester. To add a course, one must have the approval of the faculty adviser. The procedure is given bellow:
+
+                1. Pick up a Drop/Add form from the Office of the Registrar<br>
+                2. Fill up the relevant section of the form<br>
+                3. Obtain the signature of the course teacher/ advisor on the form and if a course is being added; make sure that space is available in the course.<br>
+                4. Submit the form to the office of the Registrar.<br>
+                5. Check at the Accounts office about any change of fee<br>
+                <br><br>
+                <b>Attendance:</b><br>
+
+                Attendance is regarded as a part of the course requirement. The expected attendance is 90 percent of classes held. A student may be debarred from appearing at the course final examinations if his/her attendance falls bellow 75 percent. Students are given marks on class attendance.
+                <br><br>
+                <b>Selecting the Major:</b><br>
+
+                The students are advised to choose their major no later than the second semester of third year. Before going to choose the major try to complete all the courses of 2nd year level and should take the opinion of the program advisor.
+                <br><br>
+
+                <b>Student Dismissal:</b><br>
+
+                Students are dismissed from the program for failure to make satisfactory academic progress. Students failing to maintain the required CGPA (2.0) in two consecutive semesters will be dropped out of the program. Students dropped out of the program may appeal to the Dean/ Head of the Department/ Coordinator for re-admission. Re-admission will not be granted without strong evidence of significant change in student’s ability to complete the requirements satisfactorily.
+                <br><br>
+                <b>Teaching Method and Medium:</b><br>
+
+                The University follows modern teaching methods including class lectures, interactive discussion, simulation, lab work, case analysis, and field study. A special feature of EUROPEAN UNIVERSITY OF BANGLADESH teaching is the tutorial/workshop/lab sessions designed to assist students in learning application of concepts and theories. The medium of instruction in EUROPEAN UNIVERSITY OF BANGLADESH is English.
+                <br><br>
+                <b>Additional Facilities for Weak Students:</b><br>
+
+                Many students joining the university may be coming from Bangla medium schools and therefore would have to adjust to English as the medium of instruction. They may be asked to attend English courses rigorously and special English course in summer or any other time preceding the semester in which they take regular courses. Similarly, students from non-science background or who are weak in Mathematics may be asked to attend a remedial course in Mathematics.
+                <br><br>
+                <b>Recognition of Outstanding Performance:</b><br>
+
+                A full-time student securing GPA 3.75 at the end of a regular semester will be included in the Dean’s Honor List and for maintaining CGPA 3.75 in successive 3rd and 4th semesters, will be placed in the VC’s Honor List. A student in the VC’s List will be given individual citation. Students with 3.9 will receive Chancellor award.
+                <br><br>
+                <b>Grading and Performance Evaluation Process: </b><br>
+
+                Final grade in each course will be given on the basis on the basis of the performance on class attendance, quiz, assignment presentation, midterm test and final examination as indicated bellow:
+
+                <br><br>
+                <table>
+                    <tr>
+                        <td>Class attendance </td>
+                        <td>20</td>
+
+                    </tr>
+                    <tr>
+                        <td>Assignment/Presentation/Quizzes </td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Midterm Test</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Semester Final Examination </td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>100</td>
+                    </tr>
+                </table>
+
+                <br><br>
+
+                <!--                <h2>Semester</h2>-->
+                <table>
+                    <tr>
+                        <td>Marks obtained out of 100 </td>
+                        <td>Grade </td>
+                        <td>Grade point
+                            Equivalent</td>
+                        <td>Remarks</td>
+                    </tr>
+                    <tr>
+                        <td>80% and above</td>
+                        <td>A+ </td>
+                        <td>4.00 </td>
+                        <td>Outstanding</td>
+                    </tr>
+                    <tr>
+                        <td>75% to less than 80%</td>
+                        <td>A</td>
+                        <td>3.75</td>
+                        <td>Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>70% to less than 75% </td>
+                        <td>A- </td>
+                        <td>3.50 </td>
+                        <td>Very Good</td>
+                    </tr>
+                    <tr>
+                        <td>65% to less than 70%</td>
+                        <td>B+ </td>
+                        <td>3.25 </td>
+                        <td>Good</td>
+                    </tr>
+                    <tr>
+                        <td>60% to less than 65% </td>
+                        <td>B</td>
+                        <td>3.00 </td>
+                        <td>Satisfactory
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>55% to less than 60%</td>
+                        <td> B-</td>
+                        <td>2.75</td>
+                        <td>Above Average</td>
+                    </tr>
+                    <tr>
+                        <td>50% to less than 55%</td>
+                        <td>C+</td>
+                        <td>2.50</td>
+                        <td>Average</td>
+                    </tr>
+                    <tr>
+                        <td>45% to less than 50%</td>
+                        <td>C</td>
+                        <td>2.25</td>
+                        <td>Below Average</td>
+                    </tr>
+                    <tr>
+                        <td>40% to less than 45%</td>
+                        <td>D</td>
+                        <td>2.00</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Less than 40%</td>
+                        <td> F</td>
+                        <td>0.00</td>
+                        <td>Fail</td>
+                    </tr>
+                </table>
+                <br><br>
+                <b>Grade Report</b><br>
+                Each student’s grade point average is numerical value obtained by dividing the total grade points earned by the credits attempted. Only the courses graded A+, A, A-, B+, B, B-, C+, C, D and F are used to determine credits attempted. In case students repeat courses, GPA and CGPA will be calculated on the basis of the grades obtained at the last attempt of the course (S) only. Grades obtained in course (s) in all examinations will be shown in the grade report. In addition, students who complete courses in addition to their normal credit requirements for graduation will inform the Registrar in writing about the course, which he intends to declare for consideration towards the requirements for the degree.
+                <br><br>
+
+                <b>The Incomplete:</b><br>
+                The ‘Incomplete’ (I) grade is used in special circumstances. The ‘Incomplete’ may be given only at the end of a semester to a student who has completed all other requirements except the final examination.
+
+                The student has the responsibility to take the initiative in making up the Incomplete as specified by the instructor. If action is not taken within three weeks of commencement of the next semester, the ‘I’ grade will automatically be converted into “F”. In the event, where the instructor from whom a student received an incomplete grade is not available, the disposition of the case-involving grade rests with the Dean of Faculties.
+                <br><br>
+                <b>Academic Probation:</b><br>
+
+                A student must maintain a good academic standing with a CGPA of at least 2.00. Students with CGPA and (or) GPA of less than 2.00 will be placed on Probation. Students on Probation will be allowed a maximum of three semesters to earn CGPA and (or) GPA 2.00 or more failing of which will result in dropped from the program.
+                <br><br>
+                <b>Retake Policy:</b><br>
+                A course passed with a grade less than B may be repeated to improve the relevant grade. When a course is repeated, the previous grade will be automatically cancelled. Students, failing in a course, will be allowed to repeat that course twice at the most on payment of course fee.
+                <br><br>
+                <b>Appeal for Grade:</b><br>
+
+                A student not satisfied with the grade in any course may appeal to the course teacher. But if the grade is not improved and at the same time, the student is not satisfied with the explanation of the teacher concerned, he/ she may make a written request to the Chair of the department or Dean of the faculty. The Chair will review the process by which the grade was determined. After having the grade or answer script-rechecked, the revised final grade will be delivered. These procedures must take place within two weeks after the grade was published. Before making an appeal the student will have to make a payment of fee as determined by the university authority
+
+            </div>
+        </div>
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>CONTACT INFORMATION</h4>
+                    <ul>
+                        <li><a href="index.html">European University of Bangladesh (EUB)</a></li>
+                        <li><a href="apply-online-admission.html">Online Admission</a></li>
+                        Admission Office: 01992887317, 01968774933 (Director), 01968774930
+                        <br><br>
+                        EUB Permanent Campus<br>
+                        2/4, Gabtoli, Mirpur, Dhaka-1216<br>
+                        
+
+                        <!--                        LIKE OUR SOCIAL MEDIA-->
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>IMPORTANT LINKS</h4>
+                    <ul>
+
+                        <li><a href="https://ugc.gov.bd">UGC, Bangladesh</a></li>
+                        <li><a href="https://moedu.gov.bd">Ministry of Education, Bangladesh</a></li>
+                        <li><a href="https://mail.google.com">Check Email</a></li>
+                        <li><a href="https://eub.edu.bd/jobs-at-eub">Jobs at EUB</a></li>
+                        <li><a href="https://eub.edu.bd/sitemap">Sitemap</a></li>
+                        <li><a href="https://eub.edu.bd">European Family</a></li>
+                        <li><a href="https://www.bdjobs.com">BD Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RESEARCH & PUBLICATION</h4>
+                    <ul>
+                        <li><a href="#"> Institutional Repository</a></li>
+                        <li><a href="https://eub.edu.bd/about-this-journal"> Research Journals »»</a></li>
+                        <li><a href="#"> Research Publications</a></li>
+                        <li><a href="#"> Research Centers</a></li>
+                        <li><a href="https://eub.edu.bd/gallery"> Media Coverage</a></li>
+                        <li><a href="#"> Newsletter</a></li>
+                        <li><a href="#"> EUB Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="#">
+                        <img src="img/logo-eub.png" style="width: 100%; height: auto;display: block;">
+                    </a>
+                    <br>
+                    <h4>APPROVED BY:</h4>
+                    <ul>
+                        <a href=""><img src="img/ugc-1.png" style="height: 60px;width: 120px;"></a>
+                        <a href=""><img src="img/goved.png" style="height: 60px;width: 120px;"></a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div style="background-color: #1e50ffb9;color: white;padding: 5px; text-align: center; ">
+        <span> © 2012-2023 European University of Bangladesh (EUB), All Rights Reserved. | Developed by Md.Minhazul Islam & Md.Shamim Reza</span>
+    </div>
+</body>
+
+</html>

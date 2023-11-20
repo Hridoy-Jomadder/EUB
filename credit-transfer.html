@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EUROPEAN UNIVERSITY OF BANGLADESH">
+<meta name="keywords" content="">
+<meta name="author" content="Hridoy Jomadder">
+
+<head>
+    <title>CREDIT TRANSFER || EUROPEAN UNIVERSITY OF BANGLADESH</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon-logo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+        .box {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+            box-sizing: border-box;
+        }
+
+        .box_row {
+            box-sizing: border-box;
+            border: 2px;
+            border-radius: 2px;
+            background-color: #ffffff;
+            width: 100%;
+            padding: 25px;
+        }
+
+        .box_text {
+            font-family: times new roman;
+            float: left;
+            margin: 20px;
+            text-align: left;
+
+        }
+
+        .box_img {
+            float: right;
+            height: 300px;
+            width: 300px;
+        }
+
+        .text {
+            font-family: times new roman;
+            margin: 20px;
+            width: 100%;
+        }
+
+
+        /*Footer Css*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #344684;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <div style="padding: 10px; background-color: #fff;">
+        <a href="#">
+            <img src="img/logo-eub.png" style="width: 18%; height: auto;display: block;
+  margin-left: auto;
+  margin-right: auto;">
+        </a>
+    </div>
+
+    <!-- ======= Dropdwn ======= -->
+    <div class="dropdwn" id="myHeader">
+        <nav>
+<!--<img src="img/logo-eub.png" style="height: auto;width: 250px;">-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about_us.html">About Us<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="" style="padding-right: 15px;">Humble Beginning</a></li>
+                        <li><a href="">Messages</a></li>
+                        <li><a href="">Certification</a></li>
+                        <li><a href="">Board of Trustees</a></li>
+                        <li><a href="">Mission and Vision</a></li>
+                        <li><a href="">Special Features</a></li>
+                        <li><a href="">Graduate Profile</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Academics</a>
+                    <ul>
+                        <li><a href="academic-policy.html">Academic Policy</a></li>
+                        <li><a href="rules-regulation.html">Rules & Regulation</a></li>
+                        <li><a href="degrees-offered.html">Degrees Offered</a></li>
+                        <li><a href="credit-transfer.html">Credit Transfer</a></li>
+                        <li><a href="examination">Examination</a></li>
+                        <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Admission</a>
+                    <ul>
+                        <li><a href="admission-information.html">Admission Information</a></li>
+                        <li><a href="waivers-and-assistance.html">Waivers and Assistance</a></li>
+                        <li><a href="courses-tuition-fees.html">Courses & Tuition Fees</a></li>
+                        <li><a href="students-welfare-committee-swc.html">Students Welfare Committee</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="admission-office.html">Admission Office</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Faculties</a>
+                    <ul>
+                        <li><a href="">Faculty of Sciences & Engineering</a>
+                            <ul>
+                                <li><a href="bachelor-of-computer-science.html">Department of Computer Science & Engineering</a>
+                            </ul>
+                        </li>
+                        <li><a href="">Faculty of Business Administration</a></li>
+                        <li><a href="">Faculty of Arts & Social Sciences</a></li>
+                        <li><a href="">Faculty Members</a>
+                            <ul>
+                                <li><a href="department-of-cse.html">Department of Computer Science & Engineering</a>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="">Administration</a>
+                    <ul>
+                        <li><a href="">Chairman</a></li>
+                        <li><a href="">Vice Chancellor</a></li>
+                        <li><a href="">Vice Chancellor Officer</a></li>
+                        <li><a href="">Office of the Treasurer</a></li>
+                        <li><a href="">Administration and office of the Registrar</a></li>
+                        <li><a href="">Office of The Proctor</a></li>
+                        <li><a href="">Office of The Controller of Examination</a></li>
+                        <li><a href="">Program Co-ordination</a></li>
+                        <li><a href="">Office of The Admission & Student Affairs</a></li>
+                        <li><a href="">Office of The Public Relations add Publications</a></li>
+                        <li><a href="">ICT and Laboratory Division</a></li>
+                        <li><a href="">Procurement and Inventory Control Section</a></li>
+                        <li><a href="">Libary and Module Archive</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Student Corner</a>
+                    <ul>
+                        <li><a href="class_routine.html">Class Routine</a></li>
+                        <li><a href="">Exam Schedule</a>
+                            <ul>
+                                <li><a href="cse_exam_schedule.html">CSE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Course Offer</a></li>
+                        <li><a href="">Admission Notice</a></li>
+                        <li><a href="">Laboratories</a></li>
+                        <li><a href="">Clubs and Co-Curriculars</a></li>
+                        <li><a href="">Result</a></li>
+                        <li><a href="">Students Guideline</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact_us.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item"><a href="">Research & Journals</a>
+                    <ul>
+                        <li><a href="">Research & Publication</a></li>
+                        <li><a href="">Journals</a></li>
+                        <li><a href="">Projects</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- ======= CREDIT TRANSFER
+ ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>CREDIT TRANSFER
+                </b><br><br>
+                EUB students who wish to transfer their credits to a foreign university are advised to go through the website of that university very carefully and must understand all the procedure regarding admission, tuition and other fees, available financial aid and insurance policy, and available part-time work facility for the students etc. before enrollment.
+<br><br>
+                Transfer from other University: Students with good academic records from other recognized University are eligible for transfer of their credits to EUB. Students willing to transfer from another university must have transcripts of courses and grades, together with the copies of certificate/ mark sheet of SSC or HSC or transcripts of O and A levels. These Transcripts will be evaluated against the minimum entry requirement at EUB.
+<br><br>
+                Exemption of Courses: Students with extensive academic or professional experience may apply to waive courses by completing a ‘Request for Course Waiver’form. This form should be submitted to the Coordinator of the Program/ Head of the Dept./ Dean of the Faculty with the relevant academic transcripts or evidence of an appropriate certification.
+<br><br>
+                Students having completed any course of Bachelor’s degree from other recognized university are eligible for waiver provided that he/ she obtained at least a ‘C+’ grade or over 50 percent marks in that specific course. Waiver is given to only in the case of those conses which are included in the syllabus of the program, the student wants to get admitted . Course waiver requires approval from equivalence committee of EUB.
+<br><br>
+
+                Credit Transfer is available to the following countries:
+                1. Melbourne Institute of Technology(MIT), Australia<br>
+                2. Mayville State University, United state of America (USA)<br>
+                3. University of Bedfordshire, United Kingdom (UK)<br>
+                4. University of Limerick,Limerick, Ireland<br>
+                5. University of Ballarat, Australia<br>
+                6. Orebro University of Sweden<br>
+                7. Auckland Institute of Studies, New Zeeland<br>
+                8. Paramount College of Technology, Malaysia<br>
+                9. Szent Istvan University, Hungary.<br>
+                10. University of Americana, Paraguay<br>
+                11. Shenyang Aerospace University, China<br>
+                12. VIT University, Vellore, Tamil Nadu, India<br>
+                13. Chao Shan College, China<br>
+                14. Open University Malaysia<br>
+                15. Guangdong University of Foreign Studies<br>
+                16. Shenyang University of Chemical Technology, China<br>
+                17. Fatih University, Turkey<br>
+                18. Dongseo University, Busan<br>
+                19. University Putra Malaysia<br>
+                20. Ho chi Minh University of Transport<br>
+                21. Siksha o Anushandhan University<br>
+                22. Bicol University, Philipines<br>
+                23. Panpacific University, Philipines<br>
+                24. Salahuddin University-Erbil, Iraq<br>
+                25. Petra Christian University, Indonesia<br>
+                26. Cambodian University for Speciaities, Combodia<br>
+                27. KIIT University, India<br>
+            </div>
+        </div>
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>CONTACT INFORMATION</h4>
+                    <ul>
+                        <li><a href="index.html">European University of Bangladesh (EUB)</a></li>
+                        <li><a href="apply-online-admission.html">Online Admission</a></li>
+                        Admission Office: 01992887317, 01968774933 (Director), 01968774930
+                        <br><br>
+                        EUB Permanent Campus<br>
+                        2/4, Gabtoli, Mirpur, Dhaka-1216<br>
+                        
+
+                        <!--                        LIKE OUR SOCIAL MEDIA-->
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>IMPORTANT LINKS</h4>
+                    <ul>
+
+                        <li><a href="https://ugc.gov.bd">UGC, Bangladesh</a></li>
+                        <li><a href="https://moedu.gov.bd">Ministry of Education, Bangladesh</a></li>
+                        <li><a href="https://mail.google.com">Check Email</a></li>
+                        <li><a href="https://eub.edu.bd/jobs-at-eub">Jobs at EUB</a></li>
+                        <li><a href="https://eub.edu.bd/sitemap">Sitemap</a></li>
+                        <li><a href="https://eub.edu.bd">European Family</a></li>
+                        <li><a href="https://www.bdjobs.com">BD Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RESEARCH & PUBLICATION</h4>
+                    <ul>
+                        <li><a href="#"> Institutional Repository</a></li>
+                        <li><a href="https://eub.edu.bd/about-this-journal"> Research Journals »»</a></li>
+                        <li><a href="#"> Research Publications</a></li>
+                        <li><a href="#"> Research Centers</a></li>
+                        <li><a href="https://eub.edu.bd/gallery"> Media Coverage</a></li>
+                        <li><a href="#"> Newsletter</a></li>
+                        <li><a href="#"> EUB Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="#">
+                        <img src="img/logo-eub.png" style="width: 100%; height: auto;display: block;">
+                    </a>
+                    <br>
+                    <h4>APPROVED BY:</h4>
+                    <ul>
+                        <a href=""><img src="img/ugc-1.png" style="height: 60px;width: 120px;"></a>
+                        <a href=""><img src="img/goved.png" style="height: 60px;width: 120px;"></a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div style="background-color: #1e50ffb9;color: white;padding: 5px; text-align: center; ">
+        <span> © 2012-2023 European University of Bangladesh (EUB), All Rights Reserved. | Developed by Md.Minhazul Islam & Md.Shamim Reza</span>
+    </div>
+</body>
+
+</html>

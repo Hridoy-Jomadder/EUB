@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EUROPEAN UNIVERSITY OF BANGLADESH">
+<meta name="keywords" content="">
+<meta name="author" content="Hridoy Jomadder">
+
+<head>
+    <title>About Us || EUROPEAN UNIVERSITY OF BANGLADESH</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon-logo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+        .box {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+            box-sizing: border-box;
+        }
+
+        .box_row {
+            box-sizing: border-box;
+            border: 2px;
+            border-radius: 2px;
+            background-color: #ffffff;
+            width: 100%;
+            padding: 25px;
+        }
+
+        .box_text {
+            font-family: times new roman;
+            float: left;
+            margin: 20px;
+            text-align: left;
+
+        }
+
+        .box_img {
+            float: right;
+            height: 300px;
+            width: 300px;
+        }
+
+        .text {
+            font-family: times new roman;
+            margin: 20px;
+            width: 100%;
+        }
+
+
+        /*Footer Css*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #344684;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <div style="padding: 10px; background-color: #fff;">
+        <a href="#">
+            <img src="img/logo-eub.png" style="width: 18%; height: auto;display: block;
+  margin-left: auto;
+  margin-right: auto;">
+        </a>
+    </div>
+
+    <!-- ======= Dropdwn ======= -->
+    <div class="dropdwn" id="myHeader">
+        <nav>
+<!--<img src="img/logo-eub.png" style="height: auto;width: 250px;">-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about_us.html">About Us<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="" style="padding-right: 15px;">Humble Beginning</a></li>
+                        <li><a href="">Messages</a></li>
+                        <li><a href="">Certification</a></li>
+                        <li><a href="">Board of Trustees</a></li>
+                        <li><a href="">Mission and Vision</a></li>
+                        <li><a href="">Special Features</a></li>
+                        <li><a href="">Graduate Profile</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Academics</a>
+                    <ul>
+                        <li><a href="academic-policy.html">Academic Policy</a></li>
+                        <li><a href="rules-regulation.html">Rules & Regulation</a></li>
+                        <li><a href="degrees-offered.html">Degrees Offered</a></li>
+                        <li><a href="credit-transfer.html">Credit Transfer</a></li>
+                        <li><a href="examination">Examination</a></li>
+                        <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Admission</a>
+                    <ul>
+                        <li><a href="admission-information.html">Admission Information</a></li>
+                        <li><a href="waivers-and-assistance.html">Waivers and Assistance</a></li>
+                        <li><a href="courses-tuition-fees.html">Courses & Tuition Fees</a></li>
+                        <li><a href="students-welfare-committee-swc.html">Students Welfare Committee</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="admission-office.html">Admission Office</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Faculties</a>
+                    <ul>
+                        <li><a href="">Faculty of Sciences & Engineering</a>
+                            <ul>
+                                <li><a href="bachelor-of-computer-science.html">Department of Computer Science & Engineering</a>
+                            </ul>
+                        </li>
+                        <li><a href="">Faculty of Business Administration</a></li>
+                        <li><a href="">Faculty of Arts & Social Sciences</a></li>
+                        <li><a href="">Faculty Members</a>
+                            <ul>
+                                <li><a href="department-of-cse.html">Department of Computer Science & Engineering</a>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="">Administration</a>
+                    <ul>
+                        <li><a href="">Chairman</a></li>
+                        <li><a href="">Vice Chancellor</a></li>
+                        <li><a href="">Vice Chancellor Officer</a></li>
+                        <li><a href="">Office of the Treasurer</a></li>
+                        <li><a href="">Administration and office of the Registrar</a></li>
+                        <li><a href="">Office of The Proctor</a></li>
+                        <li><a href="">Office of The Controller of Examination</a></li>
+                        <li><a href="">Program Co-ordination</a></li>
+                        <li><a href="">Office of The Admission & Student Affairs</a></li>
+                        <li><a href="">Office of The Public Relations add Publications</a></li>
+                        <li><a href="">ICT and Laboratory Division</a></li>
+                        <li><a href="">Procurement and Inventory Control Section</a></li>
+                        <li><a href="">Libary and Module Archive</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Student Corner</a>
+                    <ul>
+                        <li><a href="class_routine.html">Class Routine</a></li>
+                        <li><a href="">Exam Schedule</a>
+                            <ul>
+                                <li><a href="cse_exam_schedule.html">CSE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Course Offer</a></li>
+                        <li><a href="">Admission Notice</a></li>
+                        <li><a href="">Laboratories</a></li>
+                        <li><a href="">Clubs and Co-Curriculars</a></li>
+                        <li><a href="">Result</a></li>
+                        <li><a href="">Students Guideline</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact_us.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item"><a href="">Research & Journals</a>
+                    <ul>
+                        <li><a href="">Research & Publication</a></li>
+                        <li><a href="">Journals</a></li>
+                        <li><a href="">Projects</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- ======= Humble Beginning ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>Humble Beginning</b><br>
+                European University of Bangladesh (EUB) is a third generation private university aiming at providing modern education of European standard in Bangladesh. It has been accredited by the Government of the People’s Republic of Bangladesh, curricula and academic while its programs have been approved by the University Grants Commission (UGC). It was established under the Private University Act 2010 with the approval of the Government of Bangladesh on 14th March, 2012 for awarding degrees in various fields. The President of the People’s Republic of Bangladesh is the Chancellor of European University of Bangladesh. The University applies student- centred teaching and learning methods, pursues applied research and encourages creative activities with the objective of producing world-class professionals to meet national and international standard, as well as, the requirement of its graduates for their career development and employment. We are constantly investing in our campus and facilities to ensure all students have a world-class teaching and learning environment, state-of-the-art facilities and enhancing the vibrancy of the campus experience to make students time in EUB truly one to cherish.
+                The University is located at the heart of the Dhaka City at prestigious institutional zone of Gabtoli (opposite to Gabtoli Bus Terminal) with well-connected communication system.
+                <br><br>
+
+                <b>European University of Bangladesh(EUB) is the fastest growing university in Bangladesh.</b>
+                <br>
+                The University with some unique features:
+                <br>
+                1. The number of students is expanding very fast and in the last five years time its student’s population exceeded 24000<br>
+                2. The university’s physical infrastructure is growing even faster. It’s 5.5-lac square feet huge permanent campus is nearing completion at the GABTOLI, gateway to the Dhaka city.<br>
+                3. Faculty of EUB is also expanding in line with its student’s population. Currently, there are 480 teaching staff, all with the most brilliant academic degrees from renowned universities at home and abroad.<br>
+                4. The university Caters to the needs of higher education in keeping with the poorer but brilliant students coming from middle and underprivileged classes of the society spread all over the country. The university charges very low tuition fees, which are affordable to the poorer as well as working students of the country.<br>
+                5. It maintains high academic standard ensuring cent percent fair examination, Modular system of education, continuous faculty development – training, R&D and various promotional policies.<br>
+                6. EUB is a Student-Centered university it involves its students in all of its activities. To cite an example, the construction work of the permanent campus is managed from designing and planning to implement and monitoring are being carried out by its students of various related departments namely, Civil, EEE & CSE Department.<br>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Message From Chairman ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>Message From Chairman</b><br>
+                <br><br>
+                The European University of Bangladesh has started its journey towards achieving excellence in higher education in this country. In its consideration, the fount of progress in Europe has been higher education centering around science and technology. In search of excellence, the European University of Bangladesh will, go at length, to emulate the ways traversed by universities and institutions of higher education and learning in Europe. It will have unbridled faith in academic freedom, for it believes that in the absence of freedom to question, criticize, modify and amend, newer ideas cannot be generated and progress accounted for over time.
+                In its search of excellence based on the firmest belief in academic freedom, the European University of Bangladesh will endeavor to attract the best faculty, line up the efficient administration and pursue an aftercare of formal education trough a system of fostering and sustaining close contacts with alumni and continuous education.
+                In its Board of Trustees, it has already assembled resourceful persons with passions for excellence in higher education and research. With indefatigable diligence and a never failing allegiance to the motherland, the Board is determined to make a difference in these fields and I am confident this will show up in our programs and works in months and years to come.
+                We are determined to work harder, assemble the best researchists, setup and organize well-equipped laboratories and libraries, create the most congenial environment for learning and give our very best in every relevant field and area to help and support our students to become the most knowledgeable and skilled citizens of our country. Ur vision comprises a digital society, a country aspiring to apply science and technology to attain, sustain and cherish prosperity in freedom for all citizens.
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Message From Vice Chairman ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>Message From Vice Chairman</b><br>
+                <br><br>
+                It is my great pleasure to offer a message of goodwill to potential students, guardians, educationists and other members of the society on behalf of the European University of Bangladesh (EUB). We shall be more than happy to welcome you at our campus to exchange and share your views.
+                The determinants of development have been changing from manufacturing to services and from capital resources to knowledge resources. Individuals who develop and maintain high level skills achieve success in economic and social sector. Every country endeavours to ensure that its citizens are equipped with knowledge, skills and qualifications they will need in this Millennium. The EUB is committed to develop not only high quality human resources in the country but also to earn competitive edge to meet the challenges of globalisation.
+                Selection of academic programmes and designing of curricula of this university have been modelled on the knowledge and skills that are essential to participate in the competitive global industry and trade. We aim at replicating the modern strategies, systems and procedures of higher educational institutions of the West through harmonious blending with the eastern social and cultural values. The EUB is pledge-bound to implement its academic programmes for the youths in their preferred disciplines giving equal emphasis on proficiency in communication both in English and computer language.
+                As CEO I shall ensure the provision of adequate resources, facilities and expertise for students to achieve academic, personal and career goals in a stimulating and supportive environment. Our faculty will include a good number of reputed expatriate professionals to ensure regular interaction and consultation outside class room to familiarize them with the global scenarios and widening the horizon of their knowledge.
+
+                Having long experiences in teaching at overseas universities and national management development institute and working with the World Bank, I am committed to undertake collaborative activities with other public and private universities at home and abroad for mutual interests.
+                In conclusion, I would like to reiterate here that all our endeavours and initiatives will only be successful if all the stakeholders come forward in extending their whole-hearted and generous cooperation.
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Certification of the University ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>Certification of the University</b><br>
+                European University of Bangladesh is approved by
+                University Grants Commission (UGC)
+                and
+                Govt. of the People’s Republic of Bangladesh. </div>
+        </div>
+    </div>
+
+    <!-- ======= Board of Trustees ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>Board of Trustees</b><br>
+                A group of senior educationists and industrial philanthropists with highly acclaimed erudition and reputation are providing underpinnings to the establishment, continual enrichment and smooth running of the European University of Bangladesh. The group is Chaired by renowned Economist cum Politician Dr. Mohiuddin Khan Alamgir M.P. </div>
+        </div>
+    </div>
+
+    <!-- ======= Our Mission and Vision ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>Our Mission and Vision</b><br><br>
+                Mission: The mission of the European University of Bangladesh is to maintain, promote, advance and disseminate knowledge through teaching and research, and to provide appropriate level of high quality education and training responsive to the national and regional development perspectives, globalisation and advancement of information technology.Essential to fulfilling the mission, the University will produce unique and enlightened graduates with entrepreneurial zeal who would be leaders, critical thinkers and lifelong learners, imbued with initiatives and continuing quest for intellectual inquiry, challenge and opportunity.
+                <br><br>
+                Vission: The vision of the European University of Bangladesh is to be a world-class university of excellence, highly regarded locally, regionally and internationally.
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Special features and attributes of the University are: ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>Special features and attributes of the University are:</b><br><br>
+                1. Faculty members: Full-time faculty members with outstanding academic qualifications and long term teaching and research experience complemented by part time faculties with extra ordinary academic distinction from BUET, IBA, JU, BTU and corporate bodies.<br>
+                2. Degree recognition: Degree from EUB is accepted globally for higher studies and job placement.<br>
+                3. Laboratories: Well equipped laboratories with most modern scientific and engineering equipment<br>
+                4. Computer laboratories: Computer laboratories for teachers and learners with internet access for both students and faculties.<br>
+                5. Credit transfer: Credit transfer facility to universities at home and abroad.<br>
+                6. Multimedia facilities: Multimedia facilities in the class rooms for teaching and learning.<br>
+                7. Library: Collection of adequate reference books, proceedings, journals, periodicals, and including monographs internet facilities for online search for learning purposes.<br>
+                8. Career and internship: Career Guidance and Placement Officer for providing advice on internship and job placement facilities.<br>
+                9. Tuition fees: Moderate tuition fees payable in easy instalments including financial assistance to deserving students.<br>
+                10. Class schedule: Classes in both day and evening time.<br>
+                12. Special classes on weekly holidays (weekend): Academic activities are open on weekly holidays (i.e. Friday and Saturday) for the programmes involving working students (such as, Executive MBA, LL.M etc.)<br>
+                13. Academic collaboration: Global collaboration with reputed universities.<br>
+                14. English Language: Intensive English use of Language for teaching and learning.<br>
+                15. Student amenities and recreation: Sports and indoor game facilities and open space for students.<br>
+                Other facilities: Large campus, fully air conditioned class rooms extracurricular activities including regular seminars on contemporary topics
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Graduate Profile ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text"><b>Graduate Profile</b><br><br>
+                The EUB has developed statements that outline our expectations in terms of a Graduate Profile. Departments have also developed specific graduate profiles relevant to their own programmes (these amplify various aspects of the university profile).<br><br>
+
+                <b>Students graduating from EUB should have instilled in them the following values:</b><br><br>
+                a) All people are entitled to be treated as equals, and should be free from discrimination based on their gender, race, ethnicity, educational background, age, religion, physical and mental abilities, and sexual orientation.<br>
+                b) People should always treat one another with respect and tolerance. Violence is unacceptable in any form, and all disagreements should be resolved in a peaceful, cooperative manner.<br>
+                c) Transparency, accountability, compliance, and ethical behaviour are fundamental requirements in the performance of social, community, and employment responsibilities.<br>
+                d) Individuals are responsible for their own actions.<br>
+                e) Truth and excellence should be pursued and encouraged in all activities, and it is inappropriate to besmirch the success of others out of jealousy or fear.<br>
+                f) Life should be approached in a proactive manner, with a continuous search for improved solutions, and the initiation and participation in change by all individuals.<br>
+                g) Material, energy, and human resources should be used responsibly, with careful regard for the environmental impacts of all activities.<br>
+                h) Material and financial gains alone should never be the overriding life-goal of a human being, and their pursuit should not conflict with ethical, legal, and societal responsibilities.<br>
+                i) Traditional cultures are important, and play a fundamental and valuable role in society.<br>
+                j) Traditional knowledge is valuable, and can contribute to introduce knowledge.<br>
+                k) National issues should be a personal priority for all citizens.<br>
+
+                <b>Students graduating from EUB should have gained the following abilities, skills, knowledge, and understanding:
+                </b><br><br>
+
+                a) Ability to communicate with others; with listening, speaking, reading, writing, and non-verbal communication skills sufficient to offer and receive complex information.<br>
+                b) Ability to identify, deconstruct and solve complex problems; with skills sufficient to: obtain and analyse relevant information, including numerical information; use logical reasoning in constructing arguments; consider options and alternative viewpoints; and propose and implement holistic solutions.<br>
+                c) Research skills sufficient to obtain information from diverse sources.<br>
+                d) Ability to use contemporary information technology for communication, research, and analysis.<br>
+                e) Specific skills sufficient to meet a specific national workforce need.<br>
+                f) Life-skills sufficient to live and work in both urban and rural workplaces with international colleagues.<br>
+                g) Knowledge of the requirements of ethical behaviour in the workplace.<br>
+                h) Commitment to independent learning and the ability to self teach and adapt to change in careers and workplace.<br>
+                i) Ability to cope with the continuous change of a rapidly evolving society.<br>
+                j) Self-confidence and the ability to accept and provide constructive criticism.<br>
+                k) Understanding of gender equity issues, and the processes for addressing gender based discrimination.<br>
+                l) Understanding of the fundamentals of leadership, and the management of people, projects, time, and money.<br>
+                m) Team-working and conflict resolution skills.<br>
+                n) Appreciation and valuing of cultural and intellectual diversity and an ability to function in a multi-cultural or global environment.<br>
+                o) Ability to interpret local issues and events within a global perspective.<br>
+                p) Literacy in science, technology, environment, economics, and law sufficient to understand national issues.<br>
+                q) Understanding of the needs of the general population in terms of health and education; including the impacts of alcohol and other drugs, violence and sexually transmitted infections.<br>
+                r) Understanding of the needs of the general population in terms of livelihood maintenance and the requirements of sustainability in development.<br>
+                s) Understanding of the social origin of crime and the processes for addressing it.<br>
+                t) Familiarity with social and ethical responsibilities of citizenship, and the functions of representative democracy.<br>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>CONTACT INFORMATION</h4>
+                    <ul>
+                        <li><a href="index.html">European University of Bangladesh (EUB)</a></li>
+                        <li><a href="apply-online-admission.html">Online Admission</a></li>
+                        Admission Office: 01992887317, 01968774933 (Director), 01968774930
+                        <br><br>
+                        EUB Permanent Campus<br>
+                        2/4, Gabtoli, Mirpur, Dhaka-1216<br>
+                        
+
+                        <!--                        LIKE OUR SOCIAL MEDIA-->
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>IMPORTANT LINKS</h4>
+                    <ul>
+
+                        <li><a href="https://ugc.gov.bd">UGC, Bangladesh</a></li>
+                        <li><a href="https://moedu.gov.bd">Ministry of Education, Bangladesh</a></li>
+                        <li><a href="https://mail.google.com">Check Email</a></li>
+                        <li><a href="https://eub.edu.bd/jobs-at-eub">Jobs at EUB</a></li>
+                        <li><a href="https://eub.edu.bd/sitemap">Sitemap</a></li>
+                        <li><a href="https://eub.edu.bd">European Family</a></li>
+                        <li><a href="https://www.bdjobs.com">BD Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RESEARCH & PUBLICATION</h4>
+                    <ul>
+                        <li><a href="#"> Institutional Repository</a></li>
+                        <li><a href="https://eub.edu.bd/about-this-journal"> Research Journals »»</a></li>
+                        <li><a href="#"> Research Publications</a></li>
+                        <li><a href="#"> Research Centers</a></li>
+                        <li><a href="https://eub.edu.bd/gallery"> Media Coverage</a></li>
+                        <li><a href="#"> Newsletter</a></li>
+                        <li><a href="#"> EUB Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="#">
+                        <img src="img/logo-eub.png" style="width: 100%; height: auto;display: block;">
+                    </a>
+                    <br>
+                    <h4>APPROVED BY:</h4>
+                    <ul>
+                        <a href=""><img src="img/ugc-1.png" style="height: 60px;width: 120px;"></a>
+                        <a href=""><img src="img/goved.png" style="height: 60px;width: 120px;"></a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div style="background-color: #1e50ffb9;color: white;padding: 5px; text-align: center; ">
+        <span> © 2012-2023 European University of Bangladesh (EUB), All Rights Reserved. | Developed by Md.Minhazul Islam & Md.Shamim Reza</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EUROPEAN UNIVERSITY OF BANGLADESH">
+<meta name="keywords" content="">
+<meta name="author" content="Hridoy Jomadder">
+
+<head>
+    <title>EUROPEAN UNIVERSITY OF BANGLADESH</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon-logo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Stop-->
+
+    <!--
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+-->
+
+
+    <!--
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+-->
+
+    <!--box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);-->
+
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /*Box Start*/
+        .box {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+            box-sizing: border-box;
+        }
+
+        .box_row {
+            box-sizing: border-box;
+            border: 2px;
+            border-radius: 2px;
+            background-color: #ffffff;
+            width: 100%;
+            padding: 25px;
+        }
+
+        .box_text {
+            font-family: times new roman;
+            margin: 20px;
+            /*            text-align: center;*/
+            text-align: justify;
+
+        }
+
+        .box_img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .text {
+            font-family: times new roman;
+            margin: 20px;
+            width: 100%;
+        }
+
+
+        /*Footer Css*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #1e90ffb8;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #ffffdf;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+
+
+        /*Text-slider */
+
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            border: 5px solid white;
+             background-color: #1e50ffb8;
+        }
+
+        .slider-content {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-item {
+            flex: 0 0 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+
+        /* Nav Sky */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 102px;
+        }
+
+        /*Top*/
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+
+        /*        */
+        * {
+            box-sizing: border-box;
+        }
+
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+
+        #myTable {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 18px;
+        }
+
+        #myTable th,
+        #myTable td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        #myTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myTable tr.header,
+        #myTable tr:hover {
+            background-color: #f1f1f1;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- ======= Top Header ======= -->
+
+    <div style="background-color: #1e90ffb8;font-family: times new roman; font-size: 18px; text-align: center;">
+        <a href="" style="color:green;text-decoration: none;">EUB LOGIN</a>
+
+        <a href="" style="color:red;text-decoration: none;">STUDENT LOGIN</a>
+
+        <a href="" style="color:green;text-decoration: none;">FIND PROGRAM</a>
+    </div>
+
+    <div>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+                <a href="">EUB LOGIN </a>
+                <a href="">| STUDENT LOGIN |</a>
+                <a href=""> FIND PROGRAM</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ======= Header ======= -->
+    <div style="padding: 10px; background-color: #fff;">
+        <a href="#">
+            <img src="img/logo-eub.png" style="width: 18%; height: auto;display: block;margin-left: auto;margin-right: auto;">
+        </a>
+    </div>
+
+    <!-- ======= Dropdwn ======= -->
+    <div class="dropdwn" id="myHeader">
+        <nav>
+<!--<img src="img/logo-eub.png" style="height: auto;width: 250px;">-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about_us.html">About Us<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="" style="padding-right: 15px;">Humble Beginning</a></li>
+                        <li><a href="">Messages</a></li>
+                        <li><a href="">Certification</a></li>
+                        <li><a href="">Board of Trustees</a></li>
+                        <li><a href="">Mission and Vision</a></li>
+                        <li><a href="">Special Features</a></li>
+                        <li><a href="">Graduate Profile</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Academics</a>
+                    <ul>
+                        <li><a href="academic-policy.html">Academic Policy</a></li>
+                        <li><a href="rules-regulation.html">Rules & Regulation</a></li>
+                        <li><a href="degrees-offered.html">Degrees Offered</a></li>
+                        <li><a href="credit-transfer.html">Credit Transfer</a></li>
+                        <li><a href="examination">Examination</a></li>
+                        <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Admission</a>
+                    <ul>
+                        <li><a href="admission-information.html">Admission Information</a></li>
+                        <li><a href="waivers-and-assistance.html">Waivers and Assistance</a></li>
+                        <li><a href="courses-tuition-fees.html">Courses & Tuition Fees</a></li>
+                        <li><a href="students-welfare-committee-swc.html">Students Welfare Committee</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="admission-office.html">Admission Office</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Faculties</a>
+                    <ul>
+                        <li><a href="">Faculty of Sciences & Engineering</a>
+                            <ul>
+                                <li><a href="bachelor-of-computer-science.html">Department of Computer Science & Engineering</a>
+                            </ul>
+                        </li>
+                        <li><a href="">Faculty of Business Administration</a></li>
+                        <li><a href="">Faculty of Arts & Social Sciences</a></li>
+                        <li><a href="">Faculty Members</a>
+                            <ul>
+                                <li><a href="department-of-cse.html">Department of Computer Science & Engineering</a>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="">Administration</a>
+                    <ul>
+                        <li><a href="">Chairman</a></li>
+                        <li><a href="">Vice Chancellor</a></li>
+                        <li><a href="">Vice Chancellor Officer</a></li>
+                        <li><a href="">Office of the Treasurer</a></li>
+                        <li><a href="">Administration and office of the Registrar</a></li>
+                        <li><a href="">Office of The Proctor</a></li>
+                        <li><a href="">Office of The Controller of Examination</a></li>
+                        <li><a href="">Program Co-ordination</a></li>
+                        <li><a href="">Office of The Admission & Student Affairs</a></li>
+                        <li><a href="">Office of The Public Relations add Publications</a></li>
+                        <li><a href="">ICT and Laboratory Division</a></li>
+                        <li><a href="">Procurement and Inventory Control Section</a></li>
+                        <li><a href="">Libary and Module Archive</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Student Corner</a>
+                    <ul>
+                        <li><a href="class_routine.html">Class Routine</a></li>
+                        <li><a href="">Exam Schedule</a>
+                            <ul>
+                                <li><a href="cse_exam_schedule.html">CSE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Course Offer</a></li>
+                        <li><a href="">Admission Notice</a></li>
+                        <li><a href="">Laboratories</a></li>
+                        <li><a href="">Clubs and Co-Curriculars</a></li>
+                        <li><a href="">Result</a></li>
+                        <li><a href="">Students Guideline</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact_us.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item"><a href="">Research & Journals</a>
+                    <ul>
+                        <li><a href="">Research & Publication</a></li>
+                        <li><a href="">Journals</a></li>
+                        <li><a href="">Projects</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ======= Slider Start ======= -->
+    <div class="slider">
+        <div class="slide active">
+            <img src="img/EUB-CAMPUS-2019.jpg" alt="">
+            <div class="info">
+                <h2>Welcome to European University of Bangladesh</h2>
+                <p>European University of Bangladesh (EUB) is a third generation private university aiming at providing modern education of European standard in Bangladesh. It has been accredited by the Government of the People’s Republic of Bangladesh, curricula and academic while its programs have been approved by the University Grants Commission (UGC). It was established under the Private University Act 2010 with the approval of the Government of Bangladesh on 14th March, 2012 for awarding degrees in various fields. The President of the People’s Republic of Bangladesh is the Chancellor of European University of Bangladesh. </p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/Business-Buzz46.jpg" alt="">
+            <div class="info">
+                <h2>Tropical Desert</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/IMG_1112_Edited-scaled.jpg" alt="">
+            <div class="info">
+                <h2>Steaming Volcanoes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/IMG_1927-scaled.jpg" alt="">
+            <div class="info">
+                <h2>Mountain River</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/IMG_1939_Edited-scaled.jpg" alt="">
+            <div class="info">
+                <h2>Egypt Pyramids</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <i class="fas fa-chevron-left prev-btn"></i>
+            <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navigation-visibility">
+            <div class="slide-icon active"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+        </div>
+    </div>
+
+    <!-- ======= Text-slider ======= -->
+    <div class="slider-container">
+        <div class="slider-content" id="slider">
+            <div class="slider-item">
+                <a href="https://example.com">Slide 1 The European University of Bangladesh has started its journey towards achieving excellence in higher education in this country. </a>
+            </div>
+            <div class="slider-item">
+                <a href="https://example.com">Slide 2 The European University of Bangladesh has started its journey towards achieving excellence in higher education in this country. </a>
+            </div>
+            <div class="slider-item">
+                <a href="https://example.com">Slide 3 The European University of Bangladesh has started its journey towards achieving excellence in higher education in this country. </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Chairman ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div id="box_img">
+                <img src="img/MP.jpg">
+            </div>
+            <div class="box_text">
+                <b style="font-family: times new roman; font-size: 18px;">Message From Chairman<br></b>
+                The European University of Bangladesh has started its journey towards achieving excellence in higher education in this country. In its consideration, the fount of progress in Europe has been higher education centering around science and technology. In search of excellence, the European University of Bangladesh will, go at length, to emulate the ways traversed by universities and institutions of higher education and learning in Europe.
+                <br><br>
+                Muhiuddin Khan Alamgir<br>
+                Ph.D, M.A<br>
+                University of Dhaka<br>
+                Boston University<br>
+                Chairman<br>
+                European University of Bangladesh
+            </div>
+        </div>
+    </div>
+
+    <!-- =======Vice Chairman ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_img">
+                <img src="img/Dr.-Mokbul-Ahmed-Khan.jpg">
+            </div>
+            <div class="box_text">
+                <b style="font-family: times new roman; font-size: 18px;">Message From Vice Chairman<br></b>
+                It is my great pleasure to offer a message of goodwill to potential students, guardians, educationists and other members of the society on behalf of the European University of Bangladesh (EUB). We shall be more than happy to welcome you at our campus to exchange and share your views.
+                The determinants of development have been changing from manufacturing to services and from capital resources to knowledge resources.
+                <!--                More-->
+                <br><br>
+                Prof. Dr. Mokbul Ahmed Khan<br>
+                MA (DU), PhD (Moscow)<br>
+                PDF (UK)<br>
+                Former Professor, Otago University, New Zealand<br>
+                Vice Chairman<br>
+                European University of Bangladesh<br>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ======= Welcome to European University of Bangladesh ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text">
+                <b style="font-family: times new roman; font-size: 18px; text-align: center;">Welcome to European University of Bangladesh</b><br><br>
+
+                European University of Bangladesh (EUB) is a third generation private university aiming at providing modern education of European standard in Bangladesh. It has been accredited by the Government of the People’s Republic of Bangladesh, curricula and academic while its programs have been approved by the University Grants Commission (UGC). It was established under the Private University Act 2010 with the approval of the Government of Bangladesh on 14th March, 2012 for awarding degrees in various fields. The President of the People’s Republic of Bangladesh is the Chancellor of European University of Bangladesh. The University applies student- centred teaching and learning methods, pursues applied research and encourages creative activities with the objective of producing world-class professionals to meet national and international standard, as well as, the requirement of its graduates for their career development and employment. We are constantly investing in our campus and facilities to ensure all students have a world-class teaching and learning environment, state-of-the-art facilities and enhancing the vibrancy of the campus experience to make students time in EUB truly one to cherish.
+                The University is located at the heart of the Dhaka City at prestigious institutional zone of Gabtoli (opposite to Gabtoli Bus Terminal) with well-connected communication system.
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Our Mission and Vision ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text">
+                <h3 style="font-family: times new roman; font-size: 18px; text-align: center;">Our Mission and Vision</h3><br>
+                <b>Mission: </b>The mission of the European University of Bangladesh is to maintain, promote, advance and disseminate knowledge through teaching and research, and to provide appropriate level of high quality education and training responsive to the national and regional development perspectives, globalisation and advancement of information technology.Essential to fulfilling the mission, the University will produce unique and enlightened graduates with entrepreneurial zeal who would be leaders, critical thinkers and lifelong learners, imbued with initiatives and continuing quest for intellectual inquiry, challenge and opportunity.
+                <br>
+                <br>
+                <br>
+                <b style="font-family: times new roman; font-size: 18px;">Vission: </b>The vision of the European University of Bangladesh is to be a world-class university of excellence, highly regarded locally, regionally and internationally.
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Our  ======= -->
+    <div class="box">
+        <div class="box_row" style="width: 30%;">
+            <table id="myTable">
+                <tr class="header">
+                    <th>Graduate Undergraduate Programs</th>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Computer Science Engineering</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Civil Engineering</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Electrical & Electronic Engineering</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Textile Engineering</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Business Administration ( BBA )</a></td>
+
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Law (LLB-Hons)</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Tourism and Hospitality Management</a></td>
+
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">BSS (Hons. in Economics)</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Industrial Production Engineering</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box_row" style="width: 30%;text-decoration: none;">
+            <table id="myTable">
+                <tr class="header">
+                    <th style="width:60%;">Graduate Programs</th>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">MBA</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">E MBA</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">MA in English</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">LL.M</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Master in Governance and Development Studies</a></td>
+
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">MSS in Economics</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box_row" style="width: 30%;text-decoration: none;">
+            <table id="myTable">
+                <tr class="header">
+                    <th style="width:60%;">Students Information</th>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Administration and Office of the Registrar</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Office of the Controller of Examination</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Program Co-ordination</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Office of the Admission & Student Affairs</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Important Notice for Students</a></td>
+
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Admission Information</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Courses Tuition Fees</a></td>
+
+                </tr>
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Contact Admission Office</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="" style="text-decoration: none;">Clubs And Co-Curriculars</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- ======= Youtube Channel ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text">
+                <!--                <p>Our youtube Channel</p><br>-->
+            </div>
+            <iframe height="600" width="100%" src="https://www.youtube.com/embed/5rJgu3U5lbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <br>
+        </div>
+    </div>
+
+
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>CONTACT INFORMATION</h4>
+                    <ul>
+                        <li><a href="index.html">European University of Bangladesh (EUB)</a></li>
+                        <li><a href="apply-online-admission.html">Online Admission</a></li>
+                        Admission Office: 01992887317, 01968774933 (Director), 01968774930
+                        <br><br>
+                        EUB Permanent Campus<br>
+                        2/4, Gabtoli, Mirpur, Dhaka-1216<br>
+                        
+
+                        <!--                        LIKE OUR SOCIAL MEDIA-->
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>IMPORTANT LINKS</h4>
+                    <ul>
+
+                        <li><a href="https://ugc.gov.bd">UGC, Bangladesh</a></li>
+                        <li><a href="https://moedu.gov.bd">Ministry of Education, Bangladesh</a></li>
+                        <li><a href="https://mail.google.com">Check Email</a></li>
+                        <li><a href="https://eub.edu.bd/jobs-at-eub">Jobs at EUB</a></li>
+                        <li><a href="https://eub.edu.bd/sitemap">Sitemap</a></li>
+                        <li><a href="https://eub.edu.bd">European Family</a></li>
+                        <li><a href="https://www.bdjobs.com">BD Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RESEARCH & PUBLICATION</h4>
+                    <ul>
+                        <li><a href="#"> Institutional Repository</a></li>
+                        <li><a href="https://eub.edu.bd/about-this-journal"> Research Journals »»</a></li>
+                        <li><a href="#"> Research Publications</a></li>
+                        <li><a href="#"> Research Centers</a></li>
+                        <li><a href="https://eub.edu.bd/gallery"> Media Coverage</a></li>
+                        <li><a href="#"> Newsletter</a></li>
+                        <li><a href="#"> EUB Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="#">
+                        <img src="img/logo-eub.png" style="width: 100%; height: auto;display: block;">
+                    </a>
+                    <br>
+                    <h4>APPROVED BY:</h4>
+                    <ul>
+                        <a href=""><img src="img/ugc-1.png" style="height: 60px;width: 120px;"></a>
+                        <a href=""><img src="img/goved.png" style="height: 60px;width: 120px;"></a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div style="background-color: #1e50ffb9;color: white;padding: 5px; text-align: center; ">
+        <span> © 2012-2023 European University of Bangladesh (EUB), All Rights Reserved. | Developed by Md.Minhazul Islam & Md.Shamim Reza</span>
+    </div>
+
+
+
+    <!-- ======= Javascript Start ======= -->
+
+    <!--Modal-->
+    <script src="javascript/modal.js"></script>
+
+
+    <!-- ======= Text Slider javascript Start ======= -->
+<!--
+    <script>
+        const slider = document.getElementById('slider');
+        let currentIndex = 0;
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slider.children.length;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const translateValue = -currentIndex * 100 + '%';
+            slider.style.transform = `translateX(${translateValue})`;
+        }
+
+        setInterval(nextSlide, 2000); // Change slide every 2 seconds (adjust as needed)
+
+    </script>
+-->
+
+    <!-- ======= Text Slider javascript End ======= -->
+
+
+    <!-- ======= Slider javascript Start ======= -->
+    <script type="text/javascript">
+        const slider = document.querySelector(".slider");
+        const nextBtn = document.querySelector(".next-btn");
+        const prevBtn = document.querySelector(".prev-btn");
+        const slides = document.querySelectorAll(".slide");
+        const slideIcons = document.querySelectorAll(".slide-icon");
+        const numberOfSlides = slides.length;
+        var slideNumber = 0;
+
+        //image slider next button
+        nextBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            slideIcons.forEach((slideIcon) => {
+                slideIcon.classList.remove("active");
+            });
+
+            slideNumber++;
+
+            if (slideNumber > (numberOfSlides - 1)) {
+                slideNumber = 0;
+            }
+
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+        });
+
+        //image slider previous button
+        prevBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            slideIcons.forEach((slideIcon) => {
+                slideIcon.classList.remove("active");
+            });
+
+            slideNumber--;
+
+            if (slideNumber < 0) {
+                slideNumber = numberOfSlides - 1;
+            }
+
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+        });
+
+        //image slider autoplay
+        var playSlider;
+
+        var repeater = () => {
+            playSlider = setInterval(function() {
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                });
+                slideIcons.forEach((slideIcon) => {
+                    slideIcon.classList.remove("active");
+                });
+
+                slideNumber++;
+
+                if (slideNumber > (numberOfSlides - 1)) {
+                    slideNumber = 0;
+                }
+
+                slides[slideNumber].classList.add("active");
+                slideIcons[slideNumber].classList.add("active");
+            }, 4000);
+        }
+        repeater();
+
+        //stop the image slider autoplay on mouseover
+        slider.addEventListener("mouseover", () => {
+            clearInterval(playSlider);
+        });
+
+        //start the image slider autoplay again on mouseout
+        slider.addEventListener("mouseout", () => {
+            repeater();
+        });
+
+    </script>
+    <!-- ======= Slider javascript End ======= -->
+
+
+    <!-- ======= Header Sky ======= -->
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+    <!--Top-->
+    <script src="javascript/top.js"></script>
+
+
+</body>
+
+</html>

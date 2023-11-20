@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EUROPEAN UNIVERSITY OF BANGLADESH">
+<meta name="keywords" content="">
+<meta name="author" content="Hridoy Jomadder">
+
+<head>
+    <title> || EUROPEAN UNIVERSITY OF BANGLADESH</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon-logo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+        .box {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+            box-sizing: border-box;
+        }
+
+        .box_row {
+            box-sizing: border-box;
+            border: 2px;
+            border-radius: 2px;
+            background-color: #ffffff;
+            width: 100%;
+            padding: 25px;
+        }
+
+        .box_text {
+            font-family: times new roman;
+            float: left;
+            margin: 20px;
+            text-align: left;
+
+        }
+
+        .box_img {
+            float: right;
+            height: 300px;
+            width: 300px;
+        }
+
+        .text {
+            font-family: times new roman;
+            margin: 20px;
+            width: 100%;
+        }
+
+        /*Table*/
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+
+        /*Footer Css*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #344684;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <div style="padding: 10px; background-color: #fff;">
+        <a href="#">
+            <img src="img/logo-eub.png" style="width: 18%; height: auto;display: block;
+  margin-left: auto;
+  margin-right: auto;">
+        </a>
+    </div>
+
+    <!-- ======= Dropdwn ======= -->
+    <div class="dropdwn" id="myHeader">
+        <nav>
+<!--<img src="img/logo-eub.png" style="height: auto;width: 250px;">-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about_us.html">About Us<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="" style="padding-right: 15px;">Humble Beginning</a></li>
+                        <li><a href="">Messages</a></li>
+                        <li><a href="">Certification</a></li>
+                        <li><a href="">Board of Trustees</a></li>
+                        <li><a href="">Mission and Vision</a></li>
+                        <li><a href="">Special Features</a></li>
+                        <li><a href="">Graduate Profile</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Academics</a>
+                    <ul>
+                        <li><a href="academic-policy.html">Academic Policy</a></li>
+                        <li><a href="rules-regulation.html">Rules & Regulation</a></li>
+                        <li><a href="degrees-offered.html">Degrees Offered</a></li>
+                        <li><a href="credit-transfer.html">Credit Transfer</a></li>
+                        <li><a href="examination">Examination</a></li>
+                        <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Admission</a>
+                    <ul>
+                        <li><a href="admission-information.html">Admission Information</a></li>
+                        <li><a href="waivers-and-assistance.html">Waivers and Assistance</a></li>
+                        <li><a href="courses-tuition-fees.html">Courses & Tuition Fees</a></li>
+                        <li><a href="students-welfare-committee-swc.html">Students Welfare Committee</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="admission-office.html">Admission Office</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Faculties</a>
+                    <ul>
+                        <li><a href="">Faculty of Sciences & Engineering</a>
+                            <ul>
+                                <li><a href="bachelor-of-computer-science.html">Department of Computer Science & Engineering</a>
+                            </ul>
+                        </li>
+                        <li><a href="">Faculty of Business Administration</a></li>
+                        <li><a href="">Faculty of Arts & Social Sciences</a></li>
+                        <li><a href="">Faculty Members</a>
+                            <ul>
+                                <li><a href="department-of-cse.html">Department of Computer Science & Engineering</a>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="">Administration</a>
+                    <ul>
+                        <li><a href="">Chairman</a></li>
+                        <li><a href="">Vice Chancellor</a></li>
+                        <li><a href="">Vice Chancellor Officer</a></li>
+                        <li><a href="">Office of the Treasurer</a></li>
+                        <li><a href="">Administration and office of the Registrar</a></li>
+                        <li><a href="">Office of The Proctor</a></li>
+                        <li><a href="">Office of The Controller of Examination</a></li>
+                        <li><a href="">Program Co-ordination</a></li>
+                        <li><a href="">Office of The Admission & Student Affairs</a></li>
+                        <li><a href="">Office of The Public Relations add Publications</a></li>
+                        <li><a href="">ICT and Laboratory Division</a></li>
+                        <li><a href="">Procurement and Inventory Control Section</a></li>
+                        <li><a href="">Libary and Module Archive</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Student Corner</a>
+                    <ul>
+                        <li><a href="class_routine.html">Class Routine</a></li>
+                        <li><a href="">Exam Schedule</a>
+                            <ul>
+                                <li><a href="cse_exam_schedule.html">CSE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Course Offer</a></li>
+                        <li><a href="">Admission Notice</a></li>
+                        <li><a href="">Laboratories</a></li>
+                        <li><a href="">Clubs and Co-Curriculars</a></li>
+                        <li><a href="">Result</a></li>
+                        <li><a href="">Students Guideline</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact_us.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item"><a href="">Research & Journals</a>
+                    <ul>
+                        <li><a href="">Research & Publication</a></li>
+                        <li><a href="">Journals</a></li>
+                        <li><a href="">Projects</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- =======  ======= -->
+    <div class="box">
+        <div class="box_row">
+            <div class="box_text">
+                <img>
+                <b>Program Name: Bachelor of Tourism & Hospitality Management (BTHM)</b>
+                <b>a)Introduction</b>
+                <br>
+                Tourism is the single large industry in the world today. As per UNWTO statistic international tourist arrival stood at 940 million and foreign earning was $923 billion in the year 2010. Tourism is termed as the master key of the world economy. It is the industry of the industries because tourism is the combination of 109 sectors. Its produces 1 job in every 2 and half seconds. More than 300 million persons are directly employed in the industry throughout the world. One out of every 8 persons is employed in this sector. This trend shall continue throughout the 21st century. Simultaneously tourism shall change quality of the life style of the people.<br><br>
+                <br><br>
+                <b>Objectives:</b><br>
+                The primary objective of the Bachelor Degree program in tourism & hospitality management is to produce skilled manpower and competent personnel well trained to meet the ever growing demand of the tourism sector. Since tourism is a labor-intensive profitability sector both for private and public undertakings, there is high demand world-wide for professional degree in this sector. Responding to this demand, European university of Bangladesh has decided to offer four year professional degree in tourism and hospitality management.
+                <br>
+                The program focuses on hotel operation skills and management practice in the tourism and hospitality industry. It also offers a variety of exciting activities to enrich student’s academic and practical experience including local and overseas internship training. The University has highly Qualified and experienced fulltime teachers and professionals who are experts in various sectors of the tourism and hospitality industry, to provide individual academic and professional education and training advice.
+                <br><br>
+
+                <b>c) Career Opportunities:
+                </b><br>
+                Graduate of tourism & hospitality management are recognized as skilled manpower throughout the world. They have worldwide career opportunities in these fields of Tourism and Hotel business, Tourism & Hospitality Industry, Travel Agencies, Five Star Hotels, and Airlines etc. Moreover, they can also build career as tour Entrepreneur, Tour Operator, Travel Consultant, Conference and Special Events Manager, Restaurant Owner/Manager, Hotel Owner/Manager etc. <br><br>
+
+                <b>Admission Requirements:</b><br>
+                A Higher Secondary Certificate (HSC) or its equivalent in Science, Arts, Business Studies or other fields of study is the basic educational requirement. Minimum qualifying GPA is 2.5 individual in SSC/O’ level and HSC/’A’ level examination.
+
+                Students having Bachelor (Pass) / Associate/Diploma (2-4 years) degree will get waiver from the proposed program of studies.
+
+                For all foreign certificates, the University as per rules. <br><br>
+                <b>Degree Requirements:
+                </b><br>
+                1. Completion of 41 courses (123 credits hours) + an internship of 3 credits.
+                2. Passing of all courses individually and maintaining a minimum Cumulative Grade Point Average as may be determined by the authority.
+                3. The minimum passing grade for internship is “c”.
+                <br><br>
+                <b>f) Course Duration (specialization):
+                </b><br>
+                This Bachelor Degree Program is subdivided as follows:
+
+                * First Year- Freshman Year
+                * Second Year – Sophomore Year
+                * Third Year- Junior Year
+                * Fourth Year-Second Year
+                After completing First, Second, Third and Fourth years (126 credit hours), Bachelor Degree will be awarded in Tourism and Hospitality Management.
+                <br><br>
+                <b>g) Course Structure:</b><br>
+
+                <br><br>
+                <b>H) Grading and Performance evaluation (assessment):</b><br>Final grade in each course will be given on the basis of the performance on class attendance, quiz/class test, assignment, presentation, midterm test and final examination as indicated as under:
+                <br><br>
+.............................................................................................................
+                <br><br>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>CONTACT INFORMATION</h4>
+                    <ul>
+                        <li><a href="index.html">European University of Bangladesh (EUB)</a></li>
+                        <li><a href="apply-online-admission.html">Online Admission</a></li>
+                        Admission Office: 01992887317, 01968774933 (Director), 01968774930
+                        <br><br>
+                        EUB Permanent Campus<br>
+                        2/4, Gabtoli, Mirpur, Dhaka-1216<br>
+                        
+
+                        <!--                        LIKE OUR SOCIAL MEDIA-->
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>IMPORTANT LINKS</h4>
+                    <ul>
+
+                        <li><a href="https://ugc.gov.bd">UGC, Bangladesh</a></li>
+                        <li><a href="https://moedu.gov.bd">Ministry of Education, Bangladesh</a></li>
+                        <li><a href="https://mail.google.com">Check Email</a></li>
+                        <li><a href="https://eub.edu.bd/jobs-at-eub">Jobs at EUB</a></li>
+                        <li><a href="https://eub.edu.bd/sitemap">Sitemap</a></li>
+                        <li><a href="https://eub.edu.bd">European Family</a></li>
+                        <li><a href="https://www.bdjobs.com">BD Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RESEARCH & PUBLICATION</h4>
+                    <ul>
+                        <li><a href="#"> Institutional Repository</a></li>
+                        <li><a href="https://eub.edu.bd/about-this-journal"> Research Journals »»</a></li>
+                        <li><a href="#"> Research Publications</a></li>
+                        <li><a href="#"> Research Centers</a></li>
+                        <li><a href="https://eub.edu.bd/gallery"> Media Coverage</a></li>
+                        <li><a href="#"> Newsletter</a></li>
+                        <li><a href="#"> EUB Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="#">
+                        <img src="img/logo-eub.png" style="width: 100%; height: auto;display: block;">
+                    </a>
+                    <br>
+                    <h4>APPROVED BY:</h4>
+                    <ul>
+                        <a href=""><img src="img/ugc-1.png" style="height: 60px;width: 120px;"></a>
+                        <a href=""><img src="img/goved.png" style="height: 60px;width: 120px;"></a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div style="background-color: #1e50ffb9;color: white;padding: 5px; text-align: center; ">
+        <span> © 2012-2023 European University of Bangladesh (EUB), All Rights Reserved. | Developed by Md.Minhazul Islam & Md.Shamim Reza</span>
+    </div>
+</body>
+
+</html>
