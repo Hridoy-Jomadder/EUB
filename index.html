@@ -20,9 +20,7 @@
             /* Hidden by default */
             position: fixed;
             /* Stay in place */
-
-            /* z-index: 1; */
-            
+            z-index: 1;
             /* Sit on top */
             left: 0;
             top: 0;
@@ -793,7 +791,7 @@
     <!-- ======= Text Slider javascript Start ======= -->
 
     <script>
-        const slider1 = document.getElementById('slider');
+        const slider = document.getElementById('slider');
         let currentIndex = 0;
 
         function nextSlide() {
@@ -803,7 +801,7 @@
 
         function updateSlider() {
             const translateValue = -currentIndex * 100 + '%';
-            slider1.style.transform = `translateX(${translateValue})`;
+            slider.style.transform = `translateX(${translateValue})`;
         }
 
         setInterval(nextSlide, 2000); // Change slide every 2 seconds (adjust as needed)
