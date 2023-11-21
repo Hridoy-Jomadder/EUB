@@ -791,7 +791,7 @@
     <!-- ======= Text Slider javascript Start ======= -->
 
     <script>
-        const slider = document.getElementById('slider');
+        const slider1 = document.getElementById('slider');
         let currentIndex = 0;
 
         function nextSlide() {
@@ -801,7 +801,7 @@
 
         function updateSlider() {
             const translateValue = -currentIndex * 100 + '%';
-            slider.style.transform = `translateX(${translateValue})`;
+            slider1.style.transform = `translateX(${translateValue})`;
         }
 
         setInterval(nextSlide, 2000); // Change slide every 2 seconds (adjust as needed)
