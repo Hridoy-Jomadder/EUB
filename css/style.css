@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 5px;
 }
+a{
+    color: #000;
+}
 
 /*
 .container {}
@@ -284,7 +287,8 @@ nav ul ul ul li {
 
         a {
             text-decoration: none;
-            color: #fff;
+            color: #333;
+
         }
 
 
