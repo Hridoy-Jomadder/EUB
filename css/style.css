@@ -303,9 +303,6 @@ nav ul ul ul li {
             padding-top: 102px;
         }
 /*  */
-* {
-    box-sizing: border-box;
-}
 
 #myInput {
     background-image: url('/css/searchicon.png');
