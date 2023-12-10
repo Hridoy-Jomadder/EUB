@@ -7,21 +7,34 @@
 <meta name="author" content="Hridoy Jomadder">
 
 <head>
-    <title>Academic Calendar || EUROPEAN UNIVERSITY OF BANGLADESH</title>
+    <title>EUROPEAN UNIVERSITY OF BANGLADESH</title>
 
     <link rel="icon" type="image/x-icon" href="img/favicon-logo.jpg">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+    <style>
+
+
+    </style>
 
 </head>
 
 <body>
+    <!-- ======= Top Header ======= -->
+
+    <div style="background-color: #1e90ffb8;font-family: times new roman; font-size: 18px; text-align: center;">
+        <a href="" style="color:white;text-decoration: none;">EUB LOGIN </a>
+
+        <a href="" style="color:white;text-decoration: none;">| STUDENT LOGIN |</a>
+
+        <a href="" style="color:white;text-decoration: none;"> FIND PROGRAM</a>
+    </div>
+
     <!-- ======= Header ======= -->
     <div style="padding: 10px; background-color: #fff;">
         <a href="#">
-            <img src="img/logo-eub.png" style="width: 18%; height: auto;display: block;
-  margin-left: auto;
-  margin-right: auto;">
+            <img src="img/logo-eub.png" style="width: 18%; height: auto;display: block;margin-left: auto;margin-right: auto;">
         </a>
     </div>
 
@@ -136,29 +149,71 @@
     </div>
 
 
-    <!-- ======= Academic Calendar of Fall -2023
- ======= -->
+    <!-- ======= Our  ======= -->
     <div class="box">
-        <div class="box_row">
-            <div class="box_text"><b>Academic Calendar of Fall -2023
-                    <img src="img/academic-calendar.png" type="pdf">
+    <h2 style="color: #fff;">EUB Gallery</h2>
 
-                </b><br>
-                <b>Academic Calendar of Summer -2023
-                    <img src="img/academic-calendar%20(2).png" type="pdf">
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img/Business-Buzz46.jpg" style="width:100%">
+  </div>
 
-                </b><br>
-                <b>Academic Calendar of Spring -2023
-                </b><br>
-                <img src="img/academic-calendar%20(3).png" type="pdf">
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/Development-Fair19-1200x800.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/IMG_1112_Edited-scaled.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/IMG_1927-scaled.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img/IMG_1939_Edited-scaled.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img/IMG_1943_edited-scaled.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
 
-            </div>
-        </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/Business-Buzz46.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
     </div>
-     
+    <div class="column">
+      <img class="demo cursor" src="img/Development-Fair19-1200x800.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/IMG_1112_Edited-scaled.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/IMG_1927-scaled.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/IMG_1939_Edited-scaled.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/IMG_1943_edited-scaled.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+   </div>
+</div>
+
     <!-- ======= Footer ======= -->
     <footer class="footer">
         <div class="container">
@@ -219,11 +274,158 @@
         </div>
     </footer>
 
-
+    <!--Top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <div style="background-color: #1e50ffb9;color: white;padding: 5px; text-align: center; ">
         <span> © 2012-2023 European University of Bangladesh (EUB), All Rights Reserved. | Developed by Md.Minhazul Islam & Md.Shamim Reza</span>
     </div>
+
+
+    <!-- ======= Javascript Start ======= -->
+
+    <!-- ======= Slider javascript Start ======= -->
+    <script type="text/javascript">
+        const slider = document.querySelector(".slider");
+        const nextBtn = document.querySelector(".next-btn");
+        const prevBtn = document.querySelector(".prev-btn");
+        const slides = document.querySelectorAll(".slide");
+        const slideIcons = document.querySelectorAll(".slide-icon");
+        const numberOfSlides = slides.length;
+        var slideNumber = 0;
+
+        //image slider next button
+        nextBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            slideIcons.forEach((slideIcon) => {
+                slideIcon.classList.remove("active");
+            });
+
+            slideNumber++;
+
+            if (slideNumber > (numberOfSlides - 1)) {
+                slideNumber = 0;
+            }
+
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+        });
+
+        //image slider previous button
+        prevBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            slideIcons.forEach((slideIcon) => {
+                slideIcon.classList.remove("active");
+            });
+
+            slideNumber--;
+
+            if (slideNumber < 0) {
+                slideNumber = numberOfSlides - 1;
+            }
+
+            slides[slideNumber].classList.add("active");
+            slideIcons[slideNumber].classList.add("active");
+        });
+
+        //image slider autoplay
+        var playSlider;
+
+        var repeater = () => {
+            playSlider = setInterval(function() {
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                });
+                slideIcons.forEach((slideIcon) => {
+                    slideIcon.classList.remove("active");
+                });
+
+                slideNumber++;
+
+                if (slideNumber > (numberOfSlides - 1)) {
+                    slideNumber = 0;
+                }
+
+                slides[slideNumber].classList.add("active");
+                slideIcons[slideNumber].classList.add("active");
+            }, 4000);
+        }
+        repeater();
+
+        //stop the image slider autoplay on mouseover
+        slider.addEventListener("mouseover", () => {
+            clearInterval(playSlider);
+        });
+
+        //start the image slider autoplay again on mouseout
+        slider.addEventListener("mouseout", () => {
+            repeater();
+        });
+
+    </script>
+    <!-- ======= Slider javascript End ======= -->
+
+
+    <!-- ======= Header Sky ======= -->
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+    <!-- Gallery Image js  -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+    <!--Top-->
+    <script src="javascript/top.js"></script>
+
+
 </body>
 
 </html>
