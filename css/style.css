@@ -270,7 +270,8 @@ nav ul ul ul li {
             width: 100%;
             overflow: hidden;
             border: 5px solid #0031a4;
-             background-color: #1e50ffb8;
+            /* #1e50ffb8 */
+             background-color: #fff;
         }
 
         .slider-content {
