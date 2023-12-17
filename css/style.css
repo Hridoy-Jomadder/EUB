@@ -321,6 +321,7 @@ nav ul ul ul li {
     width: 100%;
     border: 1px solid #ddd;
     font-size: 18px;
+    margin: 5px;
 }
 
 #myTable th,
