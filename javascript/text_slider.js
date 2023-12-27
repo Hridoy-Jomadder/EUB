@@ -1,4 +1,4 @@
-        const slider = document.getElementById('slider');
+        const slider = document.getElementById('text-slider');
         let currentIndex = 0;
 
         function nextSlide() {
