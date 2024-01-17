@@ -14,7 +14,7 @@ a{
 box_img:hover {}
 */
 
-/*Dropdwn Start*/
+/* Dropdwn Start */
 .dropdwn {
     margin: 0 auto;
 }
@@ -25,19 +25,12 @@ nav {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/*
-.logo {
-    padding: 5px 0 0 80px;
-    width: 150px;
-    height: auto;
-}
-*/
-
 nav ul {
     padding: 0;
     margin: 0;
-    margin-right: 30px;
+    margin-right: 0; /* Adjusted for responsiveness */
     display: flex;
+    flex-wrap: wrap; /* Added for responsiveness */
     justify-content: center;
 }
 
@@ -46,11 +39,13 @@ nav ul li {
     position: relative;
     list-style: none;
     display: inline-block;
+    width: 100%; /* Added for responsiveness */
+    text-align: center; /* Added for responsiveness */
 }
 
 nav ul li a {
     display: block;
-    padding: 0px 25px 0px 15px;
+    padding: 0px 15px; /* Adjusted for responsiveness */
     color: white;
     text-decoration: none;
     line-height: 60px;
@@ -59,13 +54,13 @@ nav ul li a {
 
 nav ul li a:hover {
     background: #167ac6;
-
 }
 
 nav ul ul {
     position: absolute;
     top: 60px;
     display: none;
+    width: 100%; /* Added for responsiveness */
 }
 
 nav ul li:hover > ul {
@@ -73,28 +68,39 @@ nav ul li:hover > ul {
     opacity: 1;
 }
 
-/*check*/
-nav ul li a:hover > ul {
-    display: block;
-
-}
-
 nav ul ul li {
-    width: 150px;
+    width: 100%; /* Added for responsiveness */
     float: none;
     display: list-item;
     position: relative;
-
 }
 
 nav ul ul ul li {
     position: relative;
-    top: -60px;
-    left: 150px;
-
+    top: 0;
+    left: 100%; /* Adjusted for responsiveness */
 }
 
-/*nav end*/
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    nav ul {
+        margin-right: 15px; /* Adjusted for responsiveness */
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul ul {
+        top: 0;
+    }
+
+    nav ul ul ul li {
+        left: 0;
+    }
+}
+/* Dropdwn End */
+
 
 .slider {
     position: relative;
