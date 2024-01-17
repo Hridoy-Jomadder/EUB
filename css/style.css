@@ -565,10 +565,13 @@ nav ul ul ul li {
             }
         }
 
+        /* Gallery CSS */
+
         #myImg {
             border-radius: 5px;
             cursor: pointer;
             transition: 0.3s;
+            margin: 5px;
           }
           
           #myImg:hover {opacity: 0.7;}
