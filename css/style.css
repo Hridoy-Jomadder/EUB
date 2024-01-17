@@ -94,55 +94,22 @@ nav ul ul ul li {
 
 }
 
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .dropdwn {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .dropdwn {
+                width: 100%;
+            }
+        }
+
 /*nav end*/
-
-/* Mobile Navigation Styles */
-.mobile-nav {
-    display: none;
-}
-
-.menu-icon {
-    cursor: pointer;
-    padding: 15px;
-    background-color: #1e90ffb8;
-    color: white;
-    display: block;
-}
-
-.mobile-menu {
-    display: none;
-    background-color: #1e90ffb8;
-}
-
-.mobile-menu a {
-    display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-}
-
-/* Media Query for Mobile Navigation */
-@media screen and (max-width: 768px) {
-    .mobile-nav {
-        display: block;
-    }
-
-    .dropdwn {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .mobile-menu a {
-        border-bottom: 1px solid white;
-    }
-}
 
 /* Slider Start */
 .slider {
