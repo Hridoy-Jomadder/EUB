@@ -96,7 +96,7 @@ nav ul ul ul li {
 
 
         /*responsive*/
-        @media(max-width: 767px) {
+        /* @media(max-width: 767px) {
             .dropdwn {
                 width: 50%;
                 margin-bottom: 30px;
@@ -107,7 +107,7 @@ nav ul ul ul li {
             .dropdwn {
                 width: 100%;
             }
-        }
+        } */
 
 /*nav end*/
 
